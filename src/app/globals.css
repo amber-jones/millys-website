@@ -20,3 +20,19 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #EAEAEA;
 }
+
+p {
+  font-family: var(--font-lato);
+}
+
+label {
+  font-family: var(--font-koulen);
+  padding-top: 10px;
+}
+
+input, select {
+  background-color: transparent;
+  border: 1px black solid;
+  font-family: var(--font-lato);
+  padding: 4px;
+}
