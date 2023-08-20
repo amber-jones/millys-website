@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import ListItem from './components/item'
+import OrderForm from './components/form'
 
 import logo from '../../public/images/millys-logo.png'
 import noodleImage from '../../public/images/noodles.png'
@@ -191,13 +192,14 @@ export default function Home() {
       <section className='relative p-10 md:p-20'>
         <div className='grid grid-cols-1 md:grid-cols-6'>
           <div className='md:col-span-4'>
-            <h2 className='font-heading text-7xl md:text-8xl md:whitespace-nowrap text-red'>Complete the form</h2>
+            <h2 className='font-heading text-7xl md:text-8xl md:whitespace-nowrap text-red'>Complete the form</h2>  
+            <OrderForm />
             <Image
                 src={ring}
                 alt="Background decoration"
-                className='absolute -top-96 -left-20 z-10'
+                className='absolute -top-96 -left-20 -z-10'
             />
-            <form className="relative z-50 flex flex-col md:pr-20" action="/send-data-here" method="post">
+            {/* <form className="relative z-50 flex flex-col md:pr-20" action="/send-data-here" method="post">
                 <div className='flex flex-col md:flex-row gap-3 md:gap-10'>
                   <div className='flex flex-col w-full md:w-1/2'>
                     <label for="first">Name</label>
@@ -235,7 +237,7 @@ export default function Home() {
                   <a href="#" type="submit">Send Order</a>
                 </div>
              
-            </form>
+            </form> */}
           </div>
           <div className='md:col-span-2 pt-20 md:pt-32'>
             <p className='text-center px-16 font-heading'>

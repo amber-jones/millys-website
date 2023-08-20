@@ -36,3 +36,21 @@ input, select {
   font-family: var(--font-lato);
   padding: 4px;
 }
+
+.receipt:before{
+  background: 
+        linear-gradient(-45deg, #fff 16px, red 16px, blue 16px,  transparent 0), 
+        linear-gradient(45deg, #fff 16px, transparent 0);
+      background-position: left top;
+      background-repeat: repeat-x;
+      background-size: 22px 32px;
+      content: " ";
+      display: block;
+
+      height: 32px;
+  width: 100%;
+
+  position: relative;
+  bottom: 25px;
+  left:0;
+}
